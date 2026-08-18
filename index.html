@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My AI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="AI chat">
+      <section id="messages" class="messages" aria-live="polite"></section>
+
+      <form id="chat-form" class="composer">
+        <label class="sr-only" for="message-input">메시지</label>
+        <input
+          id="message-input"
+          name="message"
+          type="text"
+          autocomplete="off"
+          maxlength="4000"
+          placeholder="메시지를 입력하세요"
+          required
+        />
+        <button id="send-button" type="submit">Send</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
